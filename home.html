@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangkera</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto 25px;
+    }
+
+    .home-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      background: linear-gradient(to right, #4A00E0, #8E2DE2);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(142, 45, 226, 0.3);
+    }
+
+    .home-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(142, 45, 226, 0.4);
+    }
+
+    /* Video */
+    .video-container {
+      max-width: 900px;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      background: #000;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      display: block;
+    }
+
+    /* Controls */
+    .controls {
+      max-width: 900px;
+      margin: 25px auto 0;
+      display: flex;
+      justify-content: center;
+      padding: 0 10px;
+    }
+
+    .control-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 26px;
+      border: none;
+      border-radius: 10px;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      background: linear-gradient(to right, #ff512f, #f09819);
+      color: white;
+      box-shadow: 0 5px 15px rgba(240, 152, 25, 0.35);
+    }
+
+    .control-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(240, 152, 25, 0.5);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      iframe {
+        height: 260px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <button class="home-btn" id="homeBtn">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </button>
+  </div>
+
+  <!-- VIDEO -->
+  <div class="video-container">
+    <iframe
+      id="player"
+      src="https://javtiful.com/embed/f331c58ed69a8903b541"
+      allowfullscreen
+      allow="autoplay; fullscreen">
+    </iframe>
+  </div>
+
+  <!-- DOWNLOAD BUTTON -->
+  <div class="controls">
+    <button class="control-btn" id="downloadBtn">
+      <i class="fas fa-download"></i>
+      <span>DOWNLOAD</span>
+    </button>
+  </div>
+
+  <script>
+    const homeBtn = document.getElementById("homeBtn");
+    const downloadBtn = document.getElementById("downloadBtn");
+
+    // Home button
+    homeBtn.addEventListener("click", () => {
+      window.location.href = "https://boldilocks.xyz/";
+    });
+
+    // Download button logic
+    downloadBtn.addEventListener("click", () => {
+      // Open ads in new tab
+      window.open("https://otieu.com/4/8251888", "_blank");
+
+      // Redirect main tab to actual download
+      window.location.href = "https://app.razuna.com/fi/l/w8yeione41ynjbgwf5rbp";
+    });
+  </script>
+
+</body>
+</html>
